@@ -5,7 +5,7 @@ var request = require('request');
 module.exports = function (session) {
   /* GET home page. */
   router.get('/', function (req, res, next) {
-    res.render('index', { title: 'Express' });
+    res.send({ status: 'welcome' });
   });
 
 
